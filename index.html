@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>16bits JS Foundation</title>
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
+        <meta name="theme-color" content="#00FFC4"/>
+
+        <meta name='description' content='16bits JS Foundation'>
+        <link rel='canonical' href='https://16bits-js-foundation.github.io'>
+        <meta name='mobile-web-app-capable' content='yes'>
+        <meta name='apple-mobile-web-app-capable' content='yes'>
+        <meta name='application-name' content='16bits JS Foundation'>
+        <meta name='apple-mobile-web-app-status-bar-style' content='#00FFC4'>
+        <meta name='apple-mobile-web-app-title' content='16bits JS'>
+        <meta name='msapplication-TileImage' content='Favicon/favicon.ico'>
+        <meta name='msapplication-TileColor' content='#00FFC4'>
+
+        <link rel="apple-touch-icon" sizes="180x180" href="Favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="Favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="Favicon/favicon-16x16.png">
+        <link rel='icon' href='Favicon/favicon.ico' type='image/x-icon'>
+
+        <link rel="stylesheet" type="text/css" href="style/style.css" >
+        <link rel="manifest" href="manifest.json">
+    </head>
+    <body>
+        <div id="html-content">
+            <img src="img/logo/16bits JS Foundation banner.png" id="banner">
+            <nav id="nav"></nav>
+            <br>
+            <h1 style="color: white; font-size: 60px; text-align: center;">16bits JS Foundation</h1>
+            <br>
+            <article id="about">
+                <h4>About the 16bits JS Foundation</h4>
+                The 16bits JS Foundation is a group of open source JavaScript developer's who works on large and small projects. 
+                <br><br>
+                Our mission is to have fun, build projects made of JavaScript and web technologies and help grow the JavaScript ecosystem as a whole.
+            </article>
+        </div>
+        <script>
+            if('serviceWorker' in navigator) {
+              navigator.serviceWorker
+                       .register('sw.js')
+                       .then(function() { console.log("Service Worker Registered"); });
+            }
+        </script>
+        <script src="script/app.js"></script>
+    </body>
+</html>
